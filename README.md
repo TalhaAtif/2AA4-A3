@@ -1,4 +1,4 @@
-# Assignment A1 - Maze Runner
+# Assignment A3 - Maze Runner Refactoring + Unit Testing
 
 - Original author: Dr. [Sébastien Mosser](https://mosser.github.io)
 - Version: 2024.01
