@@ -1,0 +1,23 @@
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %logger{0} %msg%n" />
+        </Console>
+
+        <Console name="traceConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%msg" />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- Logger name="TraceLogger" level="trace" additivity="false" -->
+        <Logger name="TraceLogger" level="off" additivity="false">
+            <AppenderRef ref="traceConsole" />
+        </Logger>
+
+        <!--Root level="info"-->
+        <Root level="off">
+            <AppenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
